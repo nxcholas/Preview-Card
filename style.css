@@ -25,12 +25,16 @@ body{
     display: flex;
 }
 
-.image{
+#image_desktop{
     width: 60%;
 }
 
 img{
     border-radius: 2% 0 0 2%;
+}
+
+#mobile_image{
+    display: none;
 }
 
 .card-content{
@@ -61,7 +65,6 @@ img{
     font-weight: 500;
     font-size: 14px;
     color: var(--neutral-clr-darkgrayblue);
-    margin-right: auto;
     line-height: 1.7;
     margin-top: 0;
     margin-bottom: 0;
@@ -77,6 +80,7 @@ img{
 .price{
     color: var(--primary-clr-darkcyan);
     font-family: 'Fraunces';
+    margin-right: 20px;
 }
 
 .discount-price{
@@ -111,5 +115,40 @@ svg{
 }
 
 @media screen and (max-width: 600px){
-    
+    .main{
+        margin-top: 0vh;
+    }
+
+    #desktop_image{
+        width: auto;
+        display: none;
+        visibility: hidden;
+    }
+
+    #mobile_image{
+        display: block;
+    }
+
+    img{
+        border-radius: 3% 3% 0 0;
+    }
+
+    .card{
+        flex-direction: column;
+        width: auto;
+    }
+
+    .card-content{
+        width: auto;
+        border-radius: 0 0 3% 3%;
+    }
+
+    .prices{
+        justify-content: left;
+    }
+
+    .atc-btn{
+        width: 100%;
+    }
+
 }
