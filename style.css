@@ -15,6 +15,7 @@
     max-width: 80vh;    
     margin: 0 auto;
     margin-top: 20vh;
+    
 }
 
 body{
@@ -23,6 +24,8 @@ body{
 
 .card{
     display: flex;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 3%;
 }
 
 #image_desktop{
@@ -31,6 +34,8 @@ body{
 
 img{
     border-radius: 2% 0 0 2%;
+    width: 100%; 
+    height: 100%;
 }
 
 #mobile_image{
